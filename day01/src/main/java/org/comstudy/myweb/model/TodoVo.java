@@ -35,7 +35,7 @@ public class TodoVo {
 		this.title = title;
 	}
 
-	public boolean isDone() {ㅎ
+	public boolean isDone() {
 		return done;
 	}
 

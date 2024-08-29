@@ -29,8 +29,18 @@
 
 // src 영역에 선언된 JAVA 객체 바로 사용가능. (사용 할 클래스 import 필수)
 TodoVo todo = new TodoVo(100, "집안 정리하기", false);
+// jsp에는 out, request, response, session, application 등의 내장 객체가 미리 준비되어 있다..
 %>
 	<h1>Hello World</h1>
-	<a href="/App">앱 ㄱㄱ</a>
+	<ul>
+	<li><a href="App">앱 ㄱㄱ</a></li>
+	<li><a href="todo/list">Todolist</a></li>
+	
+	</ul>
+	<h3><%=todo %></h3>
+	
+	<table>
+	</table>
+	
 </body>
 </html>
