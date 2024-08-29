@@ -71,3 +71,10 @@ local.properties
 
 Server
 Server/*
+
+*/.setting
+*/.setting/
+*/.setting/*
+
+*/.classpath
+*/.project
