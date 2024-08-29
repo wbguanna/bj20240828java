@@ -45,7 +45,8 @@ public class TodoVo {
 
 	@Override
 	public String toString() {
-		return "TodoVo [no=" + no + ", title=" + title + ", done=" + done + "]";
+//		return "TodoVo [no=" + no + ", title=" + title + ", done=" + done + "]";
+		return String.format("TodoVo:{no:d, title:%s, done:%b}", no, title, done);
 	}
 
 	
