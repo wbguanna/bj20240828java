@@ -35,11 +35,9 @@ public class App extends HttpServlet {
 		// HttpServletResponse의 PrintWriter 객체를 이용해서 화면에 HTML 출력;
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
-//		out.println("!<DOCTYPE html>"
-//				+"<head>"
-//				+"<meta charset=\"UTF-8\""
-//				+"<title>App 서블릿 사용법 예제</title>"
-//				+"</head><body>");
+		out.println("<head>"
+				+"<title>App 서블릿 사용법 예제</title>"
+				+"</head><body>");
 		
 		out.write("<h1>this App run on Tomcat 9.0</h1>\n");
 		out.println("<p>this function printed by PrintWriter.println</p>");

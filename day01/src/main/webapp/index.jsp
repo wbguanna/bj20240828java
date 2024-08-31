@@ -33,7 +33,7 @@ TodoVo todo = new TodoVo(100, "집안 정리하기", false);
 %>
 	<h1>Hello World</h1>
 	<ul>
-	<li><a href="App">앱 ㄱㄱ</a></li>
+	<li><a href="App">to App</a></li>
 	<li><a href="todo/list">Todolist</a></li>
 	
 	</ul>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>day02</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 서블릿 매핑 -->
+  <servlet>
+  	<servlet-name>lifecycle</servlet-name>
+  	<servlet-class>org.comstudy.myweb.LifecycleServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>simple</servlet-name>
+  	<servlet-class>org.comstudy.myweb.SimpleHttpServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>result</servlet-name>
+  	<jsp-file>/views/result.jsp</jsp-file>
+  </servlet>
+  	
+  	
+  <servlet-mapping>
+  	<servlet-name>result</servlet-name>
+  	<url-pattern>/ch01/result.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>simple</servlet-name>
+  	<url-pattern>/simple</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>lifecycle</servlet-name>
+  	<url-pattern>/lifecycle</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 필터 
+  <filter>
+  	<filter-name>setCharEncoding</filter-name>
+  	<filter-class>filters.SetCharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+	  <filter-name>setCharEncoding</filter-name>
+	  <url-pattern>/*</url-pattern>
+  </filter-mapping>-->
+</web-app>

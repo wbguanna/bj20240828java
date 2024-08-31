@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
- <h1>할일 수정</h1>
+ <h1>할일 삭제</h1>
+
 </body>
 </html>
