@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<jsp:useBean id="todos" scope="session" class="org.comstudy.myweb.model.TodoDTO" />
+<jsp:useBean id="todos" scope="session" class="org.comstudy.myweb.controller.TodoVO" />
 <!DOCTYPE html>
 <html>
 <head>

@@ -62,7 +62,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector URIEncodint="UTF-8" connectionTimeout="20000" maxParameterCount="1000" port="8088" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector URIEncodint="UTF-8" connectionTimeout="20000" maxParameterCount="1000" port="8089" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -162,7 +162,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="day02" path="/day02" reloadable="true" source="org.eclipse.jst.jee.server:day02"/><Context docBase="day01" path="/day01" reloadable="true" source="org.eclipse.jst.jee.server:day01"/><Context docBase="day03" path="/day03" reloadable="true" source="org.eclipse.jst.jee.server:day03"/><Context docBase="day03-2" path="/day03-2" reloadable="true" source="org.eclipse.jst.jee.server:day03-2"/><Context docBase="proj05" path="/proj05" reloadable="true" source="org.eclipse.jst.jee.server:proj05"/><Context docBase="day03-3" path="/day03-3" reloadable="true" source="org.eclipse.jst.jee.server:day03-3"/></Host>
+      <Context docBase="day02" path="/day02" reloadable="true" source="org.eclipse.jst.jee.server:day02"/><Context docBase="day01" path="/day01" reloadable="true" source="org.eclipse.jst.jee.server:day01"/><Context docBase="day03" path="/day03" reloadable="true" source="org.eclipse.jst.jee.server:day03"/><Context docBase="day03-2" path="/day03-2" reloadable="true" source="org.eclipse.jst.jee.server:day03-2"/><Context docBase="proj05" path="/proj05" reloadable="true" source="org.eclipse.jst.jee.server:proj05"/><Context docBase="day03-3" path="/day03-3" reloadable="true" source="org.eclipse.jst.jee.server:day03-3"/><Context docBase="day03-4" path="/day03-4" reloadable="true" source="org.eclipse.jst.jee.server:day03-4"/><Context docBase="proj06" path="/proj06" reloadable="true" source="org.eclipse.jst.jee.server:proj06"/><Context docBase="day04-1" path="/" reloadable="true" source="org.eclipse.jst.jee.server:day04-1"/></Host>
     </Engine>
   </Service>
 </Server>

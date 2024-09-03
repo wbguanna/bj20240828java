@@ -30,5 +30,6 @@ public class ConfigServlet extends HttpServlet {
         out.println("<h1>" + views + "</h1>");
         out.println("<p>Author: " + servletData + "</p>");
         out.println("</body></html>");
+        out.close();
     }
 }
